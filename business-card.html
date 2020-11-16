@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <script defer src="scripts/main.js"></script>
+  <title>Name Surname</title>
+</head>
+<body>
+  <div class="layout">
+    <!-- Sidebar -->
+    <section class="sidebar">
+      <img class="side-img" src="images/my-photo.jpg" width="100" alt="my-photo">
+      <div class="sidebar-info">
+        <h1>Name <br> Surname</h1>
+        <p>Front-end developer</p>
+      </div>
+      <ul>
+        <li>
+          <a href="#about">
+            <img src="images/about.png" alt="icon">
+            About me</a>
+        </li>
+        <li>
+          <a href="#skills">
+            <img src="images/skills.png" alt="icon">
+            Skills</a>
+        </li>
+        <li>
+          <a href="#projects">
+            <img src="images/projects.png" alt="icon">
+            Projects</a>
+        </li>
+        <li>
+          <a href="#contacts">
+            <img src="images/contact.png" alt="icon">
+            Contacts</a>
+        </li>
+      </ul>
+      <p class="rights">&copy; 2020 0000XXXX</p>
+    </section>
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h1 class="heading">About me</h1>
+      <div class="about-img">
+        <img src="images/my-photo.jpg" width="170" alt="my-photo">
+      </div>
+      <h2>Hello,</h2>
+      <div class="info">
+        <p class="first">My name is Name. I am future Front-end developer. Nowadeys I live in Tashkent and study at Westminster International University in Tashkent (WIUT).
+         I am interested in programing, solving logic puzzles and reading book. In the future I want to become a professional Web-deveoper, earn by it and travel around the world.</p>
+        <p>Name: <span>Name Surname</span></p>
+        <p>Place of residence: <span>Tashkent, Uzbekistan</span></p>
+        <p>Age: <span>20</span></p>
+        <p>Languages: <span>English, Russian, Uzbek</span></p>
+      </div>
+    </section>
+    <!-- Skills -->
+    <section class="skills" id="skills">
+      <h1 class="heading">My skills</h1>
+      <div class="info">
+        <p class="first">Since I started learning how to develop websites, I gained enough knowledge to become a web developer.
+           In order to improve my skills, I was working on my own and completed several online courses. Below You can see my technical skills.</p>
+        <div class="skill-imgs">
+          <img src="images/html-logo.png" width="200" alt="html logo">
+          <img src="images/css-logo.png" width="200" alt="css logo">
+          <img src="images/js-logo.png" width="200" alt="css logo">
+        </div>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h1 class="heading">My projects</h1>
+
+      <div class="projects-list">
+        <article class="project">
+          <img src="projects/images/foto-gallery.jpg" alt="project image">
+          <h3 class="project-title">Website for restaurant</h3>
+          <small class="project-info info">Basilic restaurants website</small>
+          <button onclick="openProject('projects/index.html')">See Project</button>
+        </article>
+        <article class="project">
+          <img src="projects/images/menu-foto.jpg" alt="project image">
+          <h3 class="project-title">Website of Food</h3>
+          <small class="project-info info">Menu section of restaurant</small>
+          <button onclick="openProject('projects/menu.html')">See Project</button>
+        </article>
+        <article class="project">
+          <img src="projects/images/project-img.png" alt="project image">
+          <h3 class="project-title">Website for staffs</h3>
+          <small class="project-info info">Staff section of website</small>
+          <button onclick="openProject('projects/contacts.html')">See Project</button>
+        </article>
+      </div>
+    </section>
+    <!-- Contacts -->
+    <section class="contacts" id="contacts">
+      <h1 class="heading">Contact me</h1>
+      <div class="links">
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="images/facebook.png" width="20" alt="facebook icon">
+          Facebook
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="images/instagram.png" width="20" alt="instagram icon">
+          Instagram
+        </a>
+        <a href="https://web.telegram.org/#/login" target="_blank">
+          <img src="images/telegram.png" width="20" alt="facebook icon">
+          Telegram
+        </a>
+      </div>
+      <p class="alt">OR...</p>
+      <p class="info">Fill in the form</p>
+
+      <div>
+        <form id="contact-form">
+          <div class="text-field">
+            <label for="name">Name:</label>
+            <div class="input-group">
+              <input class="input" type="text" name="name" id="name" placeholder="Enter your name">
+              <small id="name-message" class="info">Name</small>
+            </div>
+          </div>
+          <div class="text-field">
+            <label for="email">Email:</label>
+            <div class="input-group">
+              <input class="input" type="email" name="email" id="email" placeholder="Enter your email">
+              <small id="email-message" class="info">Email</small>
+            </div>
+          </div>
+          <div class="text-field">
+            <label for="tel">Phone:</label>
+            <div class="input-group">
+              <input class="input" type="tel" name="tel" id="tel" placeholder="(9*)***-**-**" minlength="9" maxlength="12">
+              <small id="tel-message" class="info">Phone</small>
+            </div>
+          </div>
+          <div class="text-field">
+            <label for="comment">Message:</label>
+            <div class="input-group">
+              <textarea class="input" name="message" id="comment" placeholder="Your Message"></textarea>
+              <small id="comment-message" class="info">Message</small>
+            </div>
+          </div>
+          <div class="form-button">
+            <button type="submit">Contact</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <p class="warning">This website was created to fulfill Web Technology module’s requirements and does not 
+      represent an actual company or services*</p>
+  </div>
+</body>
+</html>
