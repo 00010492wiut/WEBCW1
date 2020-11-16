@@ -1,0 +1,252 @@
+/* Main layout */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+  scroll-behavior: smooth;
+}
+.layout {
+  background-color: #06f2;
+  padding: 2em;
+  min-height: 1000px;
+}
+.about-me, .skills, .projects, .contacts {
+  min-height: 500px;
+  background-color: white;
+  margin: 0 3em 3em 350px;
+  padding: 1em;
+  border-radius: 30px;
+  border: 1px solid #e8e8e8;
+  overflow: hidden;
+}
+/* About-me section */
+.about-img {
+  float: left;
+  margin: 0 2em;
+  height: 25em;
+}
+.info {
+  color: grey;
+}
+.info span {
+  color: black;
+}
+.about-me img {
+  border-radius: 50%;
+}
+.info p {
+  margin: 0.5em;
+}
+.info .first {
+  margin: 1.5em;
+}
+.heading {
+  margin-left: 30px;
+}
+/* Skills section */
+.skill-imgs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.skill-imgs img {
+  margin-top: 1em;
+}
+
+/* Projects section */
+.projects-list {
+  height: 20em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2em auto;
+}
+.project {
+  width: 200px;
+  height: 350px;
+  box-shadow:  2px 3px 5px 5px rgba(0,0,0,0.5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+}
+.project button {
+  padding: 0.5em;
+  margin: 1em auto;
+  width: 150px;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  border: 1px solid grey;
+  font-size: 1.1em;
+}
+.project button:hover {
+  background-color: blue;
+  border-color: blue;
+  transition: 0.6s ease-in-out;
+}
+.project img {
+  width: 200px;
+  border-radius: 20px;
+}
+.project-title, .project-info {
+  margin: 0;
+}
+
+
+
+
+/* Contacts section */
+.links a {
+  text-decoration: none;
+  background-color: #4a63e7;
+  color: white;
+  padding: 0.5em 5em;
+  margin: 1em 1em;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.alt {
+  font-size: 2em;
+}
+.contacts p {
+  text-align: center;
+  margin: 0;
+}
+.contacts {
+  min-height: 700px;
+}
+.input-group {
+  float: right;
+  margin-bottom: -2em;
+}
+.input-group small {
+  display: block;
+  margin-left: 2em;
+}
+.input {
+  width: 400px;
+  padding: 10px;
+  border-radius: 15px;
+}
+textarea.input {
+  resize: vertical;
+  height: 6em;
+}
+.text-field {
+  margin: 2em 10em;
+  width: 60%;
+}
+.error {
+  color: red;
+}
+input.error {
+  border-color: red;
+  color: black;
+}
+textarea.error {
+  border-color: red;
+  color: black;
+}
+.success {
+  border-color: lime;
+}
+.text-field label {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+.contacts button {
+  padding: 0.5em;
+  width: 200px;
+  border-radius: 50px;
+  background-color: #0a60ff;
+  color: white;
+  border: 1px solid blue;
+  font-size: 1.3em;
+}
+.form-button {
+  margin-top: 7em;
+  display: flex;
+  justify-content: center;
+}
+
+/* Sidebar section */
+.sidebar {
+  width: 300px;
+  height: 600px;
+  background-color: #4a63e7;
+  float: left;
+  border-radius: 30px;
+  color: white;
+  position: fixed;
+}
+ul img {
+  width: 20px;
+  margin-right: 1em;
+}
+ul {
+  list-style-type: none;
+}
+ul a {
+  text-decoration: none;
+  color: white;
+}
+.side-img {
+  border-radius: 50px;
+  margin: 2em;
+}
+.sidebar-info {
+  margin-left: 2.5em;
+  font-family: sans-serif;
+}
+ul li {
+  margin: 2em 0;
+}
+.rights {
+  margin: 2em;
+}
+.warning {
+  font-size: small;
+  text-align: center;
+}
+/* Mobile version */
+@media (max-width: 420px){
+  .sidebar {
+    display: none;
+  }
+  .about-me, .skills, .projects, .contacts {
+    max-width: 400px;
+    margin: auto 0 40px;
+    min-height: 600px;
+  }
+  .about-img {
+    margin: 1em 2em;
+    height: 100%;
+  }
+  .projects-list {
+    height: auto;
+  }
+  .project {
+    margin-top: 3em;
+  }
+  .input {
+    width: 200px;
+  }
+  .text-field {
+    margin: 2em 1em;
+    width: 90%;
+  }
+  .input-group {
+    float: none;
+  }
+  .form-button {
+    margin: 3em auto;
+  }
+}
